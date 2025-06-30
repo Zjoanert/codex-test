@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import TrainDelayChart from './TrainDelayChart';
 
 interface Stats {
   timestamp: number;
@@ -29,6 +30,7 @@ export default function Dashboard() {
     <div>
       <p>Timestamp: {new Date(stats.timestamp).toLocaleTimeString()}</p>
       <p>Value: {stats.value.toFixed(2)}</p>
+      <TrainDelayChart />
     </div>
   );
 }
