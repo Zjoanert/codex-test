@@ -15,7 +15,7 @@
     "chart.js": "^4.4.0",
     "react-leaflet": "^4.2.1",
     "leaflet": "^1.9.4",
-    "gtfs-realtime-bindings": "^3.0.0"
+    "gtfs-realtime-bindings": "1.1.0"
   },
   "devDependencies": {
     "vite": "^5.0.0",
