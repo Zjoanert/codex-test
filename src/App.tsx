@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import NewPage from './pages/NewPage';
+import CalculatorPage from './pages/CalculatorPage';
 
 export default function App() {
   return (
@@ -10,13 +11,17 @@ export default function App() {
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/">
           Dashboard
         </Link>
-        <Link style={{ color: '#fff' }} to="/new">
+        <Link style={{ color: '#fff', marginRight: '1rem' }} to="/new">
           New Page
+        </Link>
+        <Link style={{ color: '#fff' }} to="/calc">
+          Calculator
         </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/new" element={<NewPage />} />
+        <Route path="/calc" element={<CalculatorPage />} />
       </Routes>
     </BrowserRouter>
   );
