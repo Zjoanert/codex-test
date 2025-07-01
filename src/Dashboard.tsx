@@ -29,6 +29,7 @@ export default function Dashboard() {
 
   return (
     <div>
+      <h1>Real-Time Dashboard</h1>
       <p>Timestamp: {new Date(stats.timestamp).toLocaleTimeString()}</p>
       <p>Value: {stats.value.toFixed(2)}</p>
       <TrainDelayChart />

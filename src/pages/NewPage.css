@@ -1,0 +1,116 @@
+.spotify-dashboard {
+  background: #121212;
+  color: #fff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  background: #000;
+  height: 50px;
+}
+
+.main-nav .logo {
+  margin-right: 2rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.main-nav .active {
+  color: #1db954;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.app-info h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.app-info p {
+  margin: 0.2rem 0;
+}
+
+.show-secret {
+  color: #1db954;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.actions button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #1db954;
+  border: none;
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.grid {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 1.5rem;
+}
+
+.panel {
+  background: #181818;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.requests {
+  grid-column: span 2;
+}
+
+.users-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.users-box .count {
+  font-size: 3rem;
+  color: #1db954;
+}
+
+.users-box .caption {
+  font-size: 0.9rem;
+}
+
+.map {
+  grid-column: 3;
+  grid-row: 2;
+}
