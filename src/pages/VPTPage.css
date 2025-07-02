@@ -1,0 +1,50 @@
+.vpt-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  background: #000;
+}
+
+.panel svg {
+  width: 400px;
+  height: 200px;
+  background: #000;
+}
+
+path {
+  stroke: #fff;
+  stroke-width: 2;
+  fill: none;
+}
+
+path.route {
+  stroke: #0f0;
+}
+
+path.occupied {
+  stroke: #ff0;
+}
+
+.signal {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.signal.selected {
+  fill: #0ff;
+}
+
+.train {
+  fill: #f00;
+}
+
+.buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.3rem 0.5rem;
+}
