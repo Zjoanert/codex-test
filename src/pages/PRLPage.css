@@ -6,3 +6,20 @@
 .prl-page h1 {
   margin-bottom: 1rem;
 }
+
+.schedule-table {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.schedule-table th {
+  background: #f2f2f2;
+}
