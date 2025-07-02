@@ -27,3 +27,7 @@ npm run dev
 Navigate to `http://localhost:5173` (default Vite port) to see the dashboard updating in real time.
 
 The WebSocket server runs on `ws://localhost:3001` and sends a new random value every second.
+
+## GitHub Pages
+
+When deploying to GitHub Pages the application is served from the `/codex-test/` subpath. The build pipeline copies `index.html` to `404.html` so that unmatched paths load the React application without a redirect.
