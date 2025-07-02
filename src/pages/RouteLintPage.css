@@ -1,0 +1,51 @@
+.route-lint-page {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.route-form {
+  margin-bottom: 1rem;
+}
+
+.route-form input {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.diagram {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+.diagram path {
+  stroke-width: 4;
+  fill: none;
+}
+
+.legend {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.legend-item {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.legend-item.selected {
+  background: #007bff;
+}
+
+.legend-item.occupied {
+  background: #ffa500;
+}
+
+.legend-item.delay {
+  background: #ff0000;
+}
+
