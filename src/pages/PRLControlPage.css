@@ -1,0 +1,39 @@
+.prl-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "bp1 bp2 sidebar"
+    "proc storingen sidebar";
+  gap: 0.5rem;
+  height: calc(100vh - 60px);
+  background: #000;
+  color: #fff;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+#bp1 { grid-area: bp1; }
+#bp2 { grid-area: bp2; }
+.procesplan { grid-area: proc; overflow:auto; }
+.storingen { grid-area: storingen; overflow:auto; }
+.sidebar { grid-area: sidebar; display:flex; flex-direction:column; gap:0.5rem; }
+
+.baanplan svg { width: 100%; height: 100%; background:#000; }
+.baanplan path { stroke:#fff; stroke-width:1; fill:none; }
+.baanplan path.route { stroke:#00ff00; }
+.baanplan path.released { stroke:#00ffff; }
+.baanplan path.occupied { stroke:#ffff00; }
+.baanplan path.fault { stroke:#ff0000; }
+.signal { fill:#fff; cursor:pointer; }
+
+.procesplan table { width:100%; border-collapse: collapse; color:#000; }
+.procesplan th, .procesplan td { border:1px solid #ddd; padding:0.25rem; }
+.procesplan th { background:#f2f2f2; }
+.procesplan tr.actief { background:#0f0; }
+
+.storingen ul { list-style:none; padding-left:0; color:#fff; }
+.storingen li { margin-bottom:0.25rem; }
+
+.sidebar button { padding:0.5rem; background:#333; color:#fff; border:none; cursor:pointer; }
+

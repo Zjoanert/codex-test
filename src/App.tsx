@@ -4,6 +4,7 @@ import Dashboard from './Dashboard';
 import NewPage from './pages/NewPage';
 import CalculatorPage from './pages/CalculatorPage';
 import PRLPage from './pages/PRLPage';
+import PRLControlPage from './pages/PRLControlPage';
 
 export default function App() {
   return (
@@ -16,7 +17,10 @@ export default function App() {
           New Page
         </Link>
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/prl">
-          PRL
+          PRL Map
+        </Link>
+        <Link style={{ color: '#fff', marginRight: '1rem' }} to="/prl-control">
+          PRL Control
         </Link>
         <Link style={{ color: '#fff' }} to="/calc">
           Calculator
@@ -26,6 +30,7 @@ export default function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/new" element={<NewPage />} />
         <Route path="/prl" element={<PRLPage />} />
+        <Route path="/prl-control" element={<PRLControlPage />} />
         <Route path="/calc" element={<CalculatorPage />} />
       </Routes>
     </BrowserRouter>
