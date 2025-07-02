@@ -8,7 +8,7 @@ import PRLControlPage from './pages/PRLControlPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <nav style={{ padding: '1rem', background: '#282c34' }}>
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/">
           Dashboard
