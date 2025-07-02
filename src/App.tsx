@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import NewPage from './pages/NewPage';
 import CalculatorPage from './pages/CalculatorPage';
+import PRLPage from './pages/PRLPage';
 
 export default function App() {
   return (
@@ -14,6 +15,9 @@ export default function App() {
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/new">
           New Page
         </Link>
+        <Link style={{ color: '#fff', marginRight: '1rem' }} to="/prl">
+          PRL
+        </Link>
         <Link style={{ color: '#fff' }} to="/calc">
           Calculator
         </Link>
@@ -21,6 +25,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/new" element={<NewPage />} />
+        <Route path="/prl" element={<PRLPage />} />
         <Route path="/calc" element={<CalculatorPage />} />
       </Routes>
     </BrowserRouter>
