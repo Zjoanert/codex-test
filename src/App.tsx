@@ -31,6 +31,7 @@ export default function App() {
         </Link>
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/webcam">
           Webcam
+        </Link>
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/vpt">
           VPT Sim
         </Link>
