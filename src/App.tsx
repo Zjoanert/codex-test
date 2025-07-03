@@ -7,6 +7,8 @@ import PRLPage from './pages/PRLPage';
 import PRLControlPage from './pages/PRLControlPage';
 import RouteLintPage from './pages/RouteLintPage';
 import WebcamPage from './pages/WebcamPage';
+import VPTPage from './pages/VPTPage';
+import TrainCabPage from './pages/TrainCabPage';
 
 export default function App() {
   return (
@@ -29,6 +31,11 @@ export default function App() {
         </Link>
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/webcam">
           Webcam
+        <Link style={{ color: '#fff', marginRight: '1rem' }} to="/vpt">
+          VPT Sim
+        </Link>
+        <Link style={{ color: '#fff', marginRight: '1rem' }} to="/cab">
+          Cab View
         </Link>
         <Link style={{ color: '#fff' }} to="/calc">
           Calculator
@@ -41,6 +48,8 @@ export default function App() {
         <Route path="/prl-control" element={<PRLControlPage />} />
         <Route path="/routelint" element={<RouteLintPage />} />
         <Route path="/webcam" element={<WebcamPage />} />
+        <Route path="/vpt" element={<VPTPage />} />
+        <Route path="/cab" element={<TrainCabPage />} />
         <Route path="/calc" element={<CalculatorPage />} />
       </Routes>
     </BrowserRouter>
