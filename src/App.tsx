@@ -10,6 +10,7 @@ import WebcamPage from './pages/WebcamPage';
 import GreenScreenPage from './pages/GreenScreenPage';
 import VPTPage from './pages/VPTPage';
 import TrainCabPage from './pages/TrainCabPage';
+import ReceiptPage from './pages/ReceiptPage';
 
 export default function App() {
   return (
@@ -42,6 +43,9 @@ export default function App() {
         <Link style={{ color: '#fff', marginRight: '1rem' }} to="/cab">
           Cab View
         </Link>
+        <Link style={{ color: '#fff', marginRight: '1rem' }} to="/receipt">
+          Receipt OCR
+        </Link>
         <Link style={{ color: '#fff' }} to="/calc">
           Calculator
         </Link>
@@ -56,6 +60,7 @@ export default function App() {
         <Route path="/green" element={<GreenScreenPage />} />
         <Route path="/vpt" element={<VPTPage />} />
         <Route path="/cab" element={<TrainCabPage />} />
+        <Route path="/receipt" element={<ReceiptPage />} />
         <Route path="/calc" element={<CalculatorPage />} />
       </Routes>
     </BrowserRouter>
