@@ -10,6 +10,9 @@
     "server": "ts-node server/index.ts"
   },
   "dependencies": {
+    "@tensorflow-models/blazeface": "^0.1.0",
+    "@tensorflow-models/body-pix": "^2.2.1",
+    "@tensorflow/tfjs": "^4.9.0",
     "chart.js": "^4.4.0",
     "gtfs-realtime-bindings": "1.1.0",
     "leaflet": "^1.9.4",
@@ -17,11 +20,7 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
-    "leaflet": "^1.9.4",
-    "gtfs-realtime-bindings": "1.1.0",
     "react-router-dom": "^6.22.0",
-    "@tensorflow/tfjs": "^4.9.0",
-    "@tensorflow-models/blazeface": "^0.1.0",
     "three": "^0.178.0"
   },
   "devDependencies": {

@@ -1,0 +1,21 @@
+.green-screen-page {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.gs-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hidden-video {
+  display: none;
+}
+
+.gs-canvas {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 4px;
+}
