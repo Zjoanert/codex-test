@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as blazeface from '@tensorflow-models/blazeface';
-import '@tensorflow/tfjs';
+import * as tf from '@tensorflow/tfjs';
 import './WebcamPage.css';
 
 export default function WebcamPage() {
@@ -20,6 +20,17 @@ export default function WebcamPage() {
       .catch(() => {
         // ignore
       });
+  }, []);
+
+  useEffect(() => {
+    const setupBackend = async () => {
+      const success = await tf.setBackend('webgl');
+      if (!success) {
+        await tf.setBackend('cpu');
+      }
+      await tf.ready();
+    };
+    setupBackend();
   }, []);
 
   useEffect(() => {
