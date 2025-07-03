@@ -1,0 +1,39 @@
+.receipt-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.processing {
+  margin-top: 1rem;
+}
+
+.results {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-name {
+  margin-left: 0.5rem;
+}
+
+.totals {
+  margin-top: 1rem;
+  text-align: right;
+}
